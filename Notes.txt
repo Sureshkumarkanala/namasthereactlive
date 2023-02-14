@@ -1,0 +1,107 @@
+//Session -2(2 hr):
+-------------------
+
+ways for import the variables and functions in to the Component
+
+//Variable
+
+const First = <h1>First member</h1>;
+
+***{First}*****
+
+
+//Component
+const Two = () => {
+  return <h2>Two Member</h2>;
+};
+
+****<Two />*****
+
+//Arrow Function
+const Three = () => <h3>Third Member</h3>;
+
+****{<Three()>}*******
+
+
+//Arrow function with return
+const Four = () => {
+  return <h4>Fouth Component</h4>;
+};
+
+*****{Four()}*****
+
+
+const Five = () => {
+  return <h5>Fifth Menber</h5>;
+};
+
+*****{Five()}******
+
+
+
+
+
+No of ways to define a variable and function and Components:
+------------------------------------------------------------
+
+//Here Method
+const functions = () => <h1> First Method</h1>;
+
+//Here  Variables
+const Variables = <h1>This is Variable</h1>;
+
+//This is varaible
+
+const Heading = (
+  <h1 id="title" style={{ color: "blue" }}>
+    This is Headingvariable{" "}
+  </h1>
+);
+
+//This Component without Return/we can return function also in the same
+const FirstCompoent = () => <div>This is Compoent without return</div>;
+
+
+
+const FirstCompoent1 = () => {
+  return (
+    <div>
+      <h1>This is Compoent1 </h1>
+    </div>
+  );
+};
+
+const FirstCompoent2 = () => (
+  <div>
+    <h1>This is Component2 without return and currly braces</h1>
+  </div>
+);
+
+function App() {
+  return (
+    <div>
+      This is Functional Component
+      {Variables}
+      {Heading} 
+      {functions()}
+      <FirstCompoent />
+      <FirstCompoent1 />
+      <FirstCompoent2 />
+    </div>
+  );
+}
+
+export default App;
+
+***********************************************
+
+
+Git URL:
+--------
+
+https://bitbucket.org/namastedev/namaste-react-live/commits/
+
+Discord Link:
+--------------
+
+https://discord.gg/M82zTMpr 
