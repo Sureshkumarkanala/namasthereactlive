@@ -22,6 +22,8 @@ const BodyComp = () => {
     console.log("UseEffect calling when search text entered");
     getRestarunts();
   }, []);
+
+  console.log(Filteredrestaurants);
   useEffect(() => {
     console.log("UseEffect");
   }, [Allrestaurants]);
