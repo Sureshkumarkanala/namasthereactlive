@@ -24,6 +24,8 @@ const BodyComp = () => {
   }, []);
 
   console.log(Filteredrestaurants);
+  console.log(Allrestaurants);
+
   useEffect(() => {
     console.log("UseEffect");
   }, [Allrestaurants]);

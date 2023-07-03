@@ -26,7 +26,9 @@ const Header = () => {
             {" "}
             <li style={{ paddingRight: "4px" }}>About</li>
           </a>
-          <li style={{ paddingRight: "4px" }}>Contact</li>
+          <a href="Contactus">
+            <li style={{ paddingRight: "4px" }}>Contact</li>
+          </a>
           <li style={{ paddingRight: "4px" }}>Cart</li>
           <div>
             {isloggedin ? (

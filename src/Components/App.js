@@ -3,15 +3,11 @@
 import FooterComp from "./Footer";
 import Body from "../Components/Body";
 import Header from "./Header";
-// import About from "./About";
+import About from "./About";
 import Errors from "./Errors.js";
 import ReactDOM from "react-dom/client";
-// import Contactus from "./Contactus";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  // Outlet
-} from "react-router-dom";
+import Contactus from "./Contactus";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 const AppName = {
   Content: "space-between",
@@ -27,8 +23,8 @@ function App() {
       <div style={AppName}>
         <Header />
       </div>
-      <Body />
-      {/* <Outlet /> */}
+      {/* <Body /> */}
+      <Outlet />
       <FooterComp />
     </>
   );
@@ -38,14 +34,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <Errors />,
-    // children: [
-    //   {
-    //     path: "/",
-    //     element: <Body />,
-    //   },
-    //   { path: "/contactuc", element: <Contactus />, errorElement: <Errors /> },
-    //   { path: "/about", element: <About />, errorElement: <Errors /> },
-    // ],
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      { path: "/contactus", element: <Contactus />, errorElement: <Errors /> },
+      { path: "/About", element: <About />, errorElement: <Errors /> },
+    ],
   },
 ]);
 console.log("router", router);
