@@ -1,5 +1,6 @@
 import React from "react";
 
 export default testing = () => {
-  return <h2>Hello Testing here </h2>;
+  return <h2>This is testing file</h2>;
+  
 };
